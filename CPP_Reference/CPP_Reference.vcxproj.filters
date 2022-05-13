@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\templates">
+      <UniqueIdentifier>{82ebc124-9f0a-4f8d-96a2-682899c0fe4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\versions">
+      <UniqueIdentifier>{5571467d-7101-4164-82ec-db98005be833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\concurrency">
+      <UniqueIdentifier>{e4f7da3e-8b62-400d-b298-3698391556a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\basic_concepts">
+      <UniqueIdentifier>{5020b89d-3322-4e76-8471-1dc119446618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\design_patterns">
+      <UniqueIdentifier>{96d1d5c7-2221-4bbd-b2f1-710c475bbc16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\design_patterns\decorator">
+      <UniqueIdentifier>{33c1d074-c365-4594-8774-741712c60415}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CPP_Reference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="versions_CPP_11.h">
+      <Filter>Header Files\versions</Filter>
+    </ClInclude>
+    <ClInclude Include="templates_basics.h">
+      <Filter>Header Files\templates</Filter>
+    </ClInclude>
+    <ClInclude Include="basic_concepts_rValue.h">
+      <Filter>Header Files\basic_concepts</Filter>
+    </ClInclude>
+    <ClInclude Include="dp_decorator_dynamic.h">
+      <Filter>Header Files\design_patterns\decorator</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
