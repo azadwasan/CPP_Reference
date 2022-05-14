@@ -5,8 +5,11 @@
 //In addition to the dynamic decorator, the following code also shows how to handle a situation where we need virtual dispatch but
 //we can't make the funciton virtual. Concretely, we have operator<< that we can't make virtual but we would like to behave differently
 //for different object. In order to solve this problem we define a virtual printer function which is called by a common operator<< overload
-//https://stackoverflow.com/questions/55084135/is-it-possible-to-automatically-cast-to-most-derived-type
 
+//The dynamic decorators allow us to choose the decorators at run-time.
+//However, it also hides the implementation of the original class that is decorated, 
+//hence if it offer any additional interface, it is hidden and can no longer be accessed directly.
+//This will be solved through static decorators.
 namespace dp_decorator_dynamic {
 	class Shape {
 	public:

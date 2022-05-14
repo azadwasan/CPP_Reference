@@ -50,5 +50,11 @@
     <ClInclude Include="dp_decorator_dynamic.h">
       <Filter>Header Files\design_patterns\decorator</Filter>
     </ClInclude>
+    <ClInclude Include="dp_decorator_static.h">
+      <Filter>Header Files\design_patterns\decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="SFINAE.h">
+      <Filter>Header Files\templates</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

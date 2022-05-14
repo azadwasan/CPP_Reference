@@ -6,10 +6,11 @@
 #include <iostream>
 #include "templates_basics.h"
 #include "dp_decorator_dynamic.h"
-
+#include "dp_decorator_static.h"
 
 int main()
 {
-	dp_decorator_dynamic::main();
+//	dp_decorator_dynamic::main();
+	db_decorator_static::main();
 	return 0;
 } 

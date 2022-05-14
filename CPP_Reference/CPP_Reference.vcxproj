@@ -156,6 +156,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dp_decorator_dynamic.h" />
+    <ClInclude Include="dp_decorator_static.h" />
+    <ClInclude Include="SFINAE.h" />
     <ClInclude Include="templates_basics.h" />
     <ClInclude Include="versions_CPP_11.h" />
     <ClInclude Include="basic_concepts_rValue.h" />
