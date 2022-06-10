@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -92,6 +92,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
+      <EnableModules>true</EnableModules>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -155,12 +156,22 @@
     <ClCompile Include="CPP_Reference.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="217_Contains_Duplicate.h" />
+    <ClInclude Include="219_Contains_Duplicate_II.h" />
+    <ClInclude Include="BackToBasics_Templates.h" />
+    <ClInclude Include="CRTP.h" />
     <ClInclude Include="dp_decorator_dynamic.h" />
+    <ClInclude Include="dp_decorator_function.h" />
     <ClInclude Include="dp_decorator_static.h" />
+    <ClInclude Include="dp_SOLID_OCP.h" />
+    <ClInclude Include="ds_linked_list.h" />
     <ClInclude Include="SFINAE.h" />
     <ClInclude Include="templates_basics.h" />
+    <ClInclude Include="templates_specialization.h" />
+    <ClInclude Include="testing.h" />
     <ClInclude Include="versions_CPP_11.h" />
     <ClInclude Include="basic_concepts_rValue.h" />
+    <ClInclude Include="versions_cpp_20.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

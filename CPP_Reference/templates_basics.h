@@ -3,6 +3,12 @@
 #include <string>
 using namespace std;
 
+//*******************************************************************************************************************************************************
+//****************************************************** Ver Comprehensive Introduction ************************************************
+//https://www.ibm.com/docs/en/zos/2.2.0?topic=only-template-argument-deduction-c
+
+
+
 //https://www.learncpp.com/cpp-tutorial/template-classes/
 //There are various ways to include template class in the code base.
 //1. Include everything in the header file (easiest and the standard way)
@@ -91,97 +97,3 @@ int runnerMin() {
 	return 0;
 }
 
-//*******************************************************************************************************************************************************
-//****************************************************** Templates Specialization ************************************************
-template <typename T>
-bool equal(const T& val1, const T& val2) {
-	return val1 == val2;
-}
-
-//Template specialization
-template <>
-bool equal(const double& a, const double& b) {
-	return std::abs(a - b) < 0.00001;
-}
-
-void runnerEqual() {
-	int a = 2;
-	int b = 1;
-	cout << equal(a, b) << endl;
-
-	double d = 3.0;
-	double f = 4.0;
-	cout << equal(d, f) << endl;
-}
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~ Example 2, copying the actual string in the specialization ~~~~~~~~~~~~~~~~~~~~~~
-//https://www.learncpp.com/cpp-tutorial/function-template-specialization/
-
-namespace template_specialization_example_2 {
-	template <typename T>
-	class Storage
-	{
-	private:
-		T m_value{};
-	public:
-		Storage(T value)
-			: m_value{ value }
-		{
-			std::cout << "Template constructor running" << std::endl;
-		}
-		~Storage() {}; // ############## need an explicitly defined destructor to specialize ###################
-
-		void print()
-		{
-			std::cout << m_value << '\n';
-		}
-	};
-
-	template <>
-	Storage<char*>::Storage(char* value)
-	{
-		std::cout << "Spcialization constructor running" << std::endl;
-		if (!value)
-			return;
-
-		// Figure out how long the string in value is
-		int length{ 0 };
-		while (value[length] != '\0')
-			++length;
-		++length; // +1 to account for null terminator
-
-		// Allocate memory to hold the value string
-		m_value = new char[length];
-
-		// Copy the actual value string into the m_value memory we just allocated
-		for (int count = 0; count < length; ++count)
-			m_value[count] = value[count];
-	}
-
-	template <>
-	Storage<char*>::~Storage()	// ########### Destructor specialization ##########
-	{
-		delete[] m_value;
-	}
-
-	int runnerStorage()
-	{
-		// Dynamically allocate a temporary string
-		//std::string s;
-		char *s= new char[40];
-
-		// Ask user for their name
-		std::cout << "Enter your name: ";
-		std::cin >> s;
-
-		// Store the name
-		Storage<char*> storage(s);
-
-		storage.print(); // Prints our name
-
-		delete []s; // clear the std::string
-
-		storage.print(); // Prints our name
-		return 0;
-	}
-}

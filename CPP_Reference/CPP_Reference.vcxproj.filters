@@ -31,6 +31,24 @@
     <Filter Include="Header Files\design_patterns\decorator">
       <UniqueIdentifier>{33c1d074-c365-4594-8774-741712c60415}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\temp">
+      <UniqueIdentifier>{a2d9c153-d759-4c98-997a-6f1518efeaab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\design_patterns\SOLID">
+      <UniqueIdentifier>{1cd0920f-cd97-4f3b-ab23-7fa2e5b705b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\versions\C++ 20">
+      <UniqueIdentifier>{0c7fd7d1-2c40-4eb1-a676-f4251bb0ede3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\data_structures">
+      <UniqueIdentifier>{546703e6-c5cd-4786-84fa-3c18c4d496aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Talks">
+      <UniqueIdentifier>{39ded852-c2d0-4e77-aebd-0ddaa25b8a36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\leetcode">
+      <UniqueIdentifier>{7bed353e-60f0-4044-8c3c-3c5c0f79c710}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPP_Reference.cpp">
@@ -55,6 +73,36 @@
     </ClInclude>
     <ClInclude Include="SFINAE.h">
       <Filter>Header Files\templates</Filter>
+    </ClInclude>
+    <ClInclude Include="CRTP.h">
+      <Filter>Header Files\templates</Filter>
+    </ClInclude>
+    <ClInclude Include="testing.h">
+      <Filter>Header Files\temp</Filter>
+    </ClInclude>
+    <ClInclude Include="dp_decorator_function.h">
+      <Filter>Header Files\design_patterns\decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="templates_specialization.h">
+      <Filter>Header Files\templates</Filter>
+    </ClInclude>
+    <ClInclude Include="dp_SOLID_OCP.h">
+      <Filter>Header Files\design_patterns\SOLID</Filter>
+    </ClInclude>
+    <ClInclude Include="versions_cpp_20.h">
+      <Filter>Header Files\versions\C++ 20</Filter>
+    </ClInclude>
+    <ClInclude Include="ds_linked_list.h">
+      <Filter>Header Files\data_structures</Filter>
+    </ClInclude>
+    <ClInclude Include="BackToBasics_Templates.h">
+      <Filter>Header Files\Talks</Filter>
+    </ClInclude>
+    <ClInclude Include="217_Contains_Duplicate.h">
+      <Filter>Header Files\leetcode</Filter>
+    </ClInclude>
+    <ClInclude Include="219_Contains_Duplicate_II.h">
+      <Filter>Header Files\leetcode</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
